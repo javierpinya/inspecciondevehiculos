@@ -1,0 +1,1017 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true">
+
+
+
+<LinearLayout
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:actionBarNavMode="tabs"
+    tools:context=".activities.ResultadoInspeccionActivity">
+    <!--android:paddingTop="?attr/actionBarSize" en el linearlayout-->
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_margin="16dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:background="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/nueva_inspeccionres"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:inputType="none"
+                    android:text="AD0023"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/tv_inspectorres"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:inputType="none"
+                    android:text="DONATE"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_instalacionres"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"/>
+
+                <TextView
+                    android:id="@+id/tv_desinstalacionres"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:inputType="none"
+                    android:text="Rivabellosa" />
+
+                <TextView
+                    android:id="@+id/tv_transportistares"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:hint="Cod_Transp"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_albaranres"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5" />
+
+                <TextView
+                    android:id="@+id/tv_fechaarnesres"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_empresacalibracionres"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:text="Empresa Calibracion"/>
+
+                <TextView
+                    android:id="@+id/tv_empresacalibradorares"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_tractorainspeccionres1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.33" />
+
+                <TextView
+                    android:id="@+id/tv_rigidoinspeccionres"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.33" />
+
+                <TextView
+                    android:id="@+id/tv_cisternainspeccionres"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.34" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_fechacalibracionrigidores"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5" />
+
+                <TextView
+                    android:id="@+id/tv_fechacalibracioncisternares"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_codconductorres"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3" />
+
+                <TextView
+                    android:id="@+id/tv_nombreconductorres"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_suministradorres"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_pesoentradares"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:text="Peso Entrada"/>
+                <TextView
+                    android:id="@+id/tv_pesoentradares1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25" />
+                <TextView
+                    android:id="@+id/tv_pesosalidares"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:text="Peso Salida"/>
+                <TextView
+                    android:id="@+id/tv_pesosalidares1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25" />
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/permiso_conducir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/permiso_conducir"
+                android:clickable="false">
+
+            </androidx.appcompat.widget.AppCompatCheckBox>
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/adr_conductorres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/adrcond"
+                android:clickable="false">
+
+            </androidx.appcompat.widget.AppCompatCheckBox>
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/itv_tractorares"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/itvt"
+                android:clickable="false">
+
+            </androidx.appcompat.widget.AppCompatCheckBox>
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/itvcisternares"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/itvc"
+                android:clickable="false">
+
+            </androidx.appcompat.widget.AppCompatCheckBox>
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/adrtractorares"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/adrt"
+                android:clickable="false">
+
+            </androidx.appcompat.widget.AppCompatCheckBox>
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/adrcisternares"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/adrc"
+                android:clickable="false">
+
+            </androidx.appcompat.widget.AppCompatCheckBox>
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/ficha_seguridadres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ficha_seguridad"
+                android:clickable="false">
+
+            </androidx.appcompat.widget.AppCompatCheckBox>
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/transpondertractorares"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/transpondert"
+                android:clickable="false">
+
+            </androidx.appcompat.widget.AppCompatCheckBox>
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/transpondercisternares"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/transponderc"
+                android:clickable="false">
+
+            </androidx.appcompat.widget.AppCompatCheckBox>
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/cb_superficiesuperiorres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/superficiesuperior"
+                android:clickable="false">
+
+            </androidx.appcompat.widget.AppCompatCheckBox>
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/cb_posicionvehiculores"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/posicionvehiculo"
+                android:clickable="false">
+
+            </androidx.appcompat.widget.AppCompatCheckBox>
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/cb_frenoestacionamientores"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/frenoestacionamiento"
+                android:clickable="false">
+
+            </androidx.appcompat.widget.AppCompatCheckBox>
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/cb_bateriasres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/desconectadobaterias"
+                android:clickable="false">
+
+            </androidx.appcompat.widget.AppCompatCheckBox>
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/cb_apagallamasres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/apagallamas"
+                android:clickable="false">
+
+            </androidx.appcompat.widget.AppCompatCheckBox>
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/cb_movilres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/movil"
+                android:clickable="false">
+
+            </androidx.appcompat.widget.AppCompatCheckBox>
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/cb_interruptoresres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/interruptoresemergencia"
+                android:clickable="false">
+
+            </androidx.appcompat.widget.AppCompatCheckBox>
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/cb_scullyres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/scully"
+                android:clickable="false">
+
+            </androidx.appcompat.widget.AppCompatCheckBox>
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/cb_manguera_gasesres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/recvap"
+                android:clickable="false">
+
+            </androidx.appcompat.widget.AppCompatCheckBox>
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/cb_purgares"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/purga"
+                android:clickable="false">
+
+            </androidx.appcompat.widget.AppCompatCheckBox>
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/cb_ropares"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ropa"
+                android:clickable="false">
+
+            </androidx.appcompat.widget.AppCompatCheckBox>
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/cb_tc2res"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tc2c"
+                android:clickable="false">
+
+            </androidx.appcompat.widget.AppCompatCheckBox>
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/montajetagsres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/montajetagsok"
+                android:clickable="false">
+
+            </androidx.appcompat.widget.AppCompatCheckBox>
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/cb_bajadatagsres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/bajadatags"
+                android:clickable="false">
+
+            </androidx.appcompat.widget.AppCompatCheckBox>
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/cb_lecturatagsisletares"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lecturatagsok"
+                android:clickable="false">
+
+            </androidx.appcompat.widget.AppCompatCheckBox>
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/cb_estanqueidadcisternares"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/estancisterna"
+                android:clickable="false">
+
+            </androidx.appcompat.widget.AppCompatCheckBox>
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/cb_estanqueidadvalvulasapires"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/estanvalvulasapi"
+                android:clickable="false">
+
+            </androidx.appcompat.widget.AppCompatCheckBox>
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/cb_estanqueidadcajonres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/estancajonvalvulas"
+                android:clickable="false">
+
+            </androidx.appcompat.widget.AppCompatCheckBox>
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/cb_estanqueidadvalvulasfondores"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/estanvalvulasfondo"
+                android:clickable="false">
+
+            </androidx.appcompat.widget.AppCompatCheckBox>
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/cb_estanqueidadequipostrasiegosres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/estanequipotrasiego"
+                android:clickable="false">
+
+            </androidx.appcompat.widget.AppCompatCheckBox>
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/cb_recogealbaranres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/recogeralbaran"
+                android:clickable="false">
+
+            </androidx.appcompat.widget.AppCompatCheckBox>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_margin="8dp"
+                android:background="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="COMPARTIMENTOS"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:id="@+id/tvcomp1"
+                    android:text="@string/tvdep1"
+                    android:textAlignment="center"
+                    android:textSize="26sp"/>
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imcompok1res" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/alturarealsonda1" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/altura96sonda1" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cantidadcargada1" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cantidad96st1" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/diferencia1" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/voltotalplaca1" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tag1" />
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:id="@+id/tvcomp2"
+                    android:text="@string/tvdep2"
+                    android:textAlignment="center"
+                    android:textSize="26sp"/>
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imcompok2" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/alturarealsonda2" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/altura96sonda2" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cantidadcargada2" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cantidad96st2" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/diferencia2" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/voltotalplaca2" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tag2" />
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:id="@+id/tvcomp3"
+                    android:text="@string/tvdep3"
+                    android:textAlignment="center"
+                    android:textSize="26sp"/>
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imcompok3" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/alturarealsonda3" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/altura96sonda3" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cantidadcargada3" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cantidad96st3" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/diferencia3" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/voltotalplaca3" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tag3" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:id="@+id/tvcomp4"
+                    android:text="@string/tvdep4"
+                    android:textAlignment="center"
+                    android:textSize="26sp"/>
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imcompok4" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/alturarealsonda4" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/altura96sonda4" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cantidadcargada4" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cantidad96st4" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/diferencia4" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/voltotalplaca4" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tag4" />
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:id="@+id/tvcomp5"
+                    android:text="@string/tvdep5"
+                    android:textAlignment="center"
+                    android:textSize="26sp"/>
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imcompok5" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/alturarealsonda5" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/altura96sonda5" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cantidadcargada5" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cantidad96st5" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/diferencia5" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/voltotalplaca5" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tag5" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:id="@+id/tvcomp6"
+                    android:text="@string/tvdep6"
+                    android:textAlignment="center"
+                    android:textSize="26sp"/>
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imcompok6" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/alturarealsonda6" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/altura96sonda6" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cantidadcargada6" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cantidad96st6" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/diferencia6" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/voltotalplaca6" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tag6" />
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:id="@+id/tvcomp7"
+                    android:text="@string/tvdep7"
+                    android:textAlignment="center"
+                    android:textSize="26sp"/>
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imcompok7" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/alturarealsonda7" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/altura96sonda7" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cantidadcargada7" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cantidad96st7" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/diferencia7" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/voltotalplaca7" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tag7" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:id="@+id/tvcomp8"
+                    android:text="@string/tvdep8"
+                    android:textAlignment="center"
+                    android:textSize="26sp"/>
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imcompok8" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/alturarealsonda8" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/altura96sonda8" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cantidadcargada8" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cantidad96st8" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/diferencia8" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/voltotalplaca8" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tag8" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:layout_margin="8dp">
+
+                <TextView
+                    android:id="@+id/finalasdf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="RESULTADO"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold"/>
+
+
+            </LinearLayout>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/inspeccionadares"
+                android:text="@string/inspeccionada"
+                android:clickable="false"/>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/favorableres"
+                android:text="@string/favorable"
+                android:clickable="false"/>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/desfavorableres"
+                android:text="@string/desfavorable"
+                android:clickable="false"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_fechadesfavorableres"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:text="Fecha desfavorable"/>
+                <TextView
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fecha_desfavorableres1"/>
+            </LinearLayout>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bloqueores"
+                android:text="@string/bloqueo"
+                android:clickable="false"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_fechabloqueores"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:text="Fecha bloqueo"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fecha_bloqueores" />
+            </LinearLayout>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/revisadares"
+                android:text="@string/revisado"
+                android:clickable="false"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:text="Fecha Revisado"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fecha_revisadares" />
+            </LinearLayout>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/camarares"
+                android:text="Inspección cámarares"
+                android:clickable="false"/>
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+</LinearLayout>
+
+<com.google.android.material.navigation.NavigationView
+android:id="@+id/navview"
+android:layout_width="wrap_content"
+android:layout_height="match_parent"
+android:layout_gravity="start|left"
+app:headerLayout="@layout/header_navigation_drawer"
+app:menu="@menu/nav_options"
+    />
+</androidx.drawerlayout.widget.DrawerLayout>

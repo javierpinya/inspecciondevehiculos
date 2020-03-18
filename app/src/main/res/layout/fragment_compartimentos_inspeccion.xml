@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.nuevaInspeccion.CompartimentosInspeccionFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_margin="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:id="@+id/tvcomp1"
+                    android:text="@string/tvdep1"
+                    android:textAlignment="center"
+                    android:textSize="26sp"/>
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imcompok1" />
+            </LinearLayout>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/alturarealsonda1"
+                android:hint="Altura real sonda"
+                android:inputType="numberDecimal"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/altura96sonda1"
+                android:hint="altura 96"
+                android:inputType="numberDecimal"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cantidadcargada1"
+                android:hint="Cantidad cargada"
+                android:inputType="numberDecimal"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cantidad96st1"
+                android:hint="cantidad96_st"
+                android:inputType="numberDecimal"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/diferencia1"
+                android:hint="diferencia"
+                android:inputType="none"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/voltotalplaca1"
+                android:hint="@string/voltotalplaca"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tag1"
+                android:hint="@string/tv_numerotag"
+                android:inputType="none"/>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:id="@+id/tvcomp2"
+                    android:text="@string/tvdep2"
+                    android:textAlignment="center"
+                    android:textSize="26sp"/>
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imcompok2" />
+            </LinearLayout>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/alturarealsonda2"
+                android:hint="Altura real sonda"
+                android:inputType="numberDecimal"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/altura96sonda2"
+                android:hint="altura 96"
+                android:inputType="numberDecimal"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cantidadcargada2"
+                android:hint="Cantidad cargada"
+                android:inputType="numberDecimal"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cantidad96st2"
+                android:hint="cantidad96_st"
+                android:inputType="numberDecimal"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/diferencia2"
+                android:hint="diferencia"
+                android:inputType="none"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/voltotalplaca2"
+                android:hint="@string/voltotalplaca"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tag2"
+                android:hint="@string/tv_numerotag"
+                android:inputType="none"/>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:id="@+id/tvcomp3"
+                    android:text="@string/tvdep3"
+                    android:textAlignment="center"
+                    android:textSize="26sp"/>
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imcompok3" />
+            </LinearLayout>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/alturarealsonda3"
+                android:hint="Altura real sonda"
+                android:inputType="numberDecimal"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/altura96sonda3"
+                android:hint="altura 96"
+                android:inputType="numberDecimal"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cantidadcargada3"
+                android:hint="Cantidad cargada"
+                android:inputType="numberDecimal"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cantidad96st3"
+                android:hint="cantidad96_st"
+                android:inputType="numberDecimal"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/diferencia3"
+                android:hint="diferencia"
+                android:inputType="none"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/voltotalplaca3"
+                android:hint="@string/voltotalplaca"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tag3"
+                android:hint="@string/tv_numerotag"
+                android:inputType="none"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:id="@+id/tvcomp4"
+                    android:text="@string/tvdep4"
+                    android:textAlignment="center"
+                    android:textSize="26sp"/>
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imcompok4" />
+            </LinearLayout>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/alturarealsonda4"
+                android:hint="Altura real sonda"
+                android:inputType="numberDecimal"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/altura96sonda4"
+                android:hint="altura 96"
+                android:inputType="numberDecimal"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cantidadcargada4"
+                android:hint="Cantidad cargada"
+                android:inputType="numberDecimal"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cantidad96st4"
+                android:hint="cantidad96_st"
+                android:inputType="numberDecimal"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/diferencia4"
+                android:hint="diferencia"
+                android:inputType="none"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/voltotalplaca4"
+                android:hint="@string/voltotalplaca"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tag4"
+                android:hint="@string/tv_numerotag"
+                android:inputType="none"/>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:id="@+id/tvcomp5"
+                    android:text="@string/tvdep5"
+                    android:textAlignment="center"
+                    android:textSize="26sp"/>
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imcompok5" />
+            </LinearLayout>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/alturarealsonda5"
+                android:hint="Altura real sonda"
+                android:inputType="numberDecimal"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/altura96sonda5"
+                android:hint="altura 96"
+                android:inputType="numberDecimal"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cantidadcargada5"
+                android:hint="Cantidad cargada"
+                android:inputType="numberDecimal"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cantidad96st5"
+                android:hint="cantidad96_st"
+                android:inputType="numberDecimal"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/diferencia5"
+                android:hint="diferencia"
+                android:inputType="none"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/voltotalplaca5"
+                android:hint="@string/voltotalplaca"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tag5"
+                android:hint="@string/tv_numerotag"
+                android:inputType="none"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:id="@+id/tvcomp6"
+                    android:text="@string/tvdep6"
+                    android:textAlignment="center"
+                    android:textSize="26sp"/>
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imcompok6" />
+            </LinearLayout>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/alturarealsonda6"
+                android:hint="Altura real sonda"
+                android:inputType="numberDecimal"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/altura96sonda6"
+                android:hint="altura 96"
+                android:inputType="numberDecimal"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cantidadcargada6"
+                android:hint="Cantidad cargada"
+                android:inputType="numberDecimal"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cantidad96st6"
+                android:hint="cantidad96_st"
+                android:inputType="numberDecimal"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/diferencia6"
+                android:hint="diferencia"
+                android:inputType="none"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/voltotalplaca6"
+                android:hint="@string/voltotalplaca"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tag6"
+                android:hint="@string/tv_numerotag"
+                android:inputType="none"/>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:id="@+id/tvcomp7"
+                    android:text="@string/tvdep7"
+                    android:textAlignment="center"
+                    android:textSize="26sp"/>
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imcompok7" />
+            </LinearLayout>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/alturarealsonda7"
+                android:hint="Altura real sonda"
+                android:inputType="numberDecimal"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/altura96sonda7"
+                android:hint="altura 96"
+                android:inputType="numberDecimal"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cantidadcargada7"
+                android:hint="Cantidad cargada"
+                android:inputType="numberDecimal"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cantidad96st7"
+                android:hint="cantidad96_st"
+                android:inputType="numberDecimal"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/diferencia7"
+                android:hint="diferencia"
+                android:inputType="none"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/voltotalplaca7"
+                android:hint="@string/voltotalplaca"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tag7"
+                android:hint="@string/tv_numerotag"
+                android:inputType="none"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:id="@+id/tvcomp8"
+                    android:text="@string/tvdep8"
+                    android:textAlignment="center"
+                    android:textSize="26sp"/>
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imcompok8" />
+            </LinearLayout>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/alturarealsonda8"
+                android:hint="Altura real sonda"
+                android:inputType="numberDecimal"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/altura96sonda8"
+                android:hint="altura 96"
+                android:inputType="numberDecimal"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cantidadcargada8"
+                android:hint="Cantidad cargada"
+                android:inputType="numberDecimal"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cantidad96st8"
+                android:hint="cantidad96_st"
+                android:inputType="numberDecimal"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/diferencia8"
+                android:hint="diferencia"
+                android:inputType="none"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/voltotalplaca8"
+                android:hint="@string/voltotalplaca"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tag8"
+                android:hint="@string/tv_numerotag"
+                android:inputType="none"/>
+
+            <Button
+                android:id="@+id/btn_a_resolucioninspeccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/icons"
+                android:text="Siguiente"
+                android:background="@color/colorPrimary"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+</FrameLayout>
