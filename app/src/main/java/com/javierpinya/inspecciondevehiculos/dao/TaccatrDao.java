@@ -38,5 +38,8 @@ public interface TaccatrDao {
     @Query("SELECT * FROM taccatr WHERE cod_transportista LIKE :transportista")
     LiveData<List<TaccatrEntity>> findTaccatrByTrans(String transportista);
 
+    @Query("SELECT vehiculo FROM taccatr WHERE cod_transportista LIKE :transportista")
+    LiveData<List<Integer>> findTaccatrCodVehiculoByTrans(String transportista);
+
 
 }

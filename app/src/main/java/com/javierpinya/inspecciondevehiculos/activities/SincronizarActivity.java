@@ -82,7 +82,6 @@ public class SincronizarActivity extends AppCompatActivity implements View.OnCli
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sincronizar);
 
-        btnInspeccion = findViewById(R.id.btnInspecciones);
         btnTaccatr = findViewById(R.id.btntaccatr);
         btnTaccami = findViewById(R.id.btntaccami);
         btnTacprco = findViewById(R.id.btntacprco);
@@ -218,9 +217,6 @@ public class SincronizarActivity extends AppCompatActivity implements View.OnCli
     @Override
     public void onClick(View v) {
         switch (v.getId()){
-            case R.id.btnInspecciones:
-                checkpermissionandopenfilepicker(REQUEST_INSPECCION);
-                break;
             case R.id.btntaccami:
                 checkpermissionandopenfilepicker(REQUEST_TACCAMI);
                 break;

@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:actionBarNavMode="tabs">
+        >
 
         <include
             android:id="@+id/toolbar"
@@ -24,14 +24,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-                <Button
-                android:id="@+id/btnInspecciones"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="32dp"
-                android:text="inspecciones" />
 
-                <Button
+            <Button
                 android:id="@+id/btntaccami"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

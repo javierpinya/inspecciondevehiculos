@@ -12,6 +12,7 @@ import android.widget.ImageView;
 import androidx.fragment.app.Fragment;
 
 import com.javierpinya.inspecciondevehiculos.activities.BuscarInspeccionActivity;
+import com.javierpinya.inspecciondevehiculos.activities.BuscarTodoActivity;
 import com.javierpinya.inspecciondevehiculos.activities.BuscarVehiculoActivity;
 import com.javierpinya.inspecciondevehiculos.activities.CabeceraInspeccionActivity;
 import com.javierpinya.inspecciondevehiculos.R;
@@ -28,6 +29,7 @@ public class DashboardFragment extends Fragment{
     private ImageButton calculadora;
     private ImageButton sincronizar;
     private ImageView oleoducto;
+    private ImageView buscarTodo;
 
 
     public DashboardFragment() {
@@ -45,6 +47,7 @@ public class DashboardFragment extends Fragment{
         nuevaInspeccion = view.findViewById(R.id.imageNuevaInspeccion);
         calculadora = view.findViewById(R.id.imageCalculadora);
         sincronizar = view.findViewById(R.id.ib_sync);
+        buscarTodo = view.findViewById(R.id.buscartodo);
 
 
         buscarCamion.setOnClickListener(new View.OnClickListener(){
@@ -80,6 +83,15 @@ public class DashboardFragment extends Fragment{
             public void onClick(View v) {
                 Intent intent = new Intent();
                 intent.setClass(getContext(), SincronizarActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        buscarTodo.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setClass(getContext(), BuscarTodoActivity.class);
                 startActivity(intent);
             }
         });

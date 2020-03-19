@@ -22,7 +22,7 @@ public class MenuSliderAdapter extends FragmentPagerAdapter{
 
     @Override
     public int getCount() {
-        return 2;
+        return 1;
     }
 
     @Override
@@ -30,13 +30,14 @@ public class MenuSliderAdapter extends FragmentPagerAdapter{
         Bundle args = new Bundle();
         switch (position){
             case 0:
+                DashboardFragment dashboardFragment = new DashboardFragment();
+                return dashboardFragment;
+            case 1:
                 PerfilFragment perfilFragment = new PerfilFragment();
                 args.putString("tractora", tractora);
                 perfilFragment.setArguments(args);
                 return perfilFragment;
-            case 1:
-                DashboardFragment dashboardFragment = new DashboardFragment();
-                return dashboardFragment;
+
         }
         return null;
     }
@@ -46,9 +47,9 @@ public class MenuSliderAdapter extends FragmentPagerAdapter{
     public CharSequence getPageTitle(int position) {
         switch (position){
             case 0:
-                return "Perfil";
+                return "Menú Principal";
             case 1:
-                return "Dashboard";
+                return "Perfil";
         }
         return "0";
     }

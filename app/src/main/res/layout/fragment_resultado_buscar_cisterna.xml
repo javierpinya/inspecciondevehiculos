@@ -369,9 +369,11 @@
             android:id="@+id/tv_compartimentos"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
             android:gravity="center"
             android:padding="10dp"
             android:text="COMPARTIMENTOS"
+            android:textColor="@color/icons"
             android:textSize="22sp"
             android:textStyle="bold" />
 

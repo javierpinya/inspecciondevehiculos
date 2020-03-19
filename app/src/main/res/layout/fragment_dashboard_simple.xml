@@ -61,4 +61,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageBuscarInspeccion"
          />
+
+    <ImageButton
+        android:id="@+id/buscartodo"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_margin="64dp"
+        android:background="@color/icons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ib_sync"
+        app:layout_constraintTop_toBottomOf="@+id/imageNuevaInspeccion"
+        app:srcCompat="@android:drawable/ic_menu_search" />
 </androidx.constraintlayout.widget.ConstraintLayout>

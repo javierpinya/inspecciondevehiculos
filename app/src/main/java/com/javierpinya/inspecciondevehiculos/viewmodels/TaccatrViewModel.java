@@ -32,6 +32,10 @@ public class TaccatrViewModel extends AndroidViewModel {
         return taccatrRepository.findTaccatrByTrans(transportista);
     }
 
+    public LiveData<List<Integer>> findTaccatrCodVehiculoByTrans(String transportista){
+        return taccatrRepository.findTaccatrCodVehiculoByTrans(transportista);
+    }
+
     public void insertTaccatr(TaccatrEntity taccatr){
         taccatrRepository.insertTaccatr(taccatr);
     }

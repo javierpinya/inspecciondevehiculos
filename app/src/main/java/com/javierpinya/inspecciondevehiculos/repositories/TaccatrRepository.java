@@ -32,6 +32,10 @@ public class TaccatrRepository {
         return taccatrDao.findTaccatrByTrans(transportista);
     }
 
+    public LiveData<List<Integer>> findTaccatrCodVehiculoByTrans(String transportista){
+        return taccatrDao.findTaccatrCodVehiculoByTrans(transportista);
+    }
+
     public void insertTaccatr(TaccatrEntity taccatr){
         new insertAsyncTask(taccatrDao).execute(taccatr);
     }

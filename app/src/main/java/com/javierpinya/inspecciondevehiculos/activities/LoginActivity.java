@@ -6,21 +6,20 @@ import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
-import android.os.Environment;
-import android.util.Log;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.drawerlayout.widget.DrawerLayout;
 
+import com.google.android.material.navigation.NavigationView;
 import com.javierpinya.inspecciondevehiculos.R;
 import com.javierpinya.inspecciondevehiculos.fragments.LoginFragment;
-import com.javierpinya.inspecciondevehiculos.fragments.nuevaInspeccion.CabeceraInspeccionFragment;
-
-import java.util.List;
 
 public class LoginActivity extends AppCompatActivity implements LoginFragment.DataListener {
 
+    private DrawerLayout drawerLayout;
+    private NavigationView navigationView;
     private SharedPreferences prefs;
     private final int PERMISSION_REQUEST_STORAGE = 10;
     private boolean permiso_version_antigua;

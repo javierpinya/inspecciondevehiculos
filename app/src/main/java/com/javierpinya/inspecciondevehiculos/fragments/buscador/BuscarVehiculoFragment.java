@@ -163,7 +163,7 @@ public class BuscarVehiculoFragment extends Fragment {
 
         @Override
         protected Boolean doInBackground(Void... voids) {
-            for(int i=1;i<=2;i++){
+            for(int i=1;i<=1;i++){
                 UnSegundo();
                 publishProgress(i*50);
                 if(isCancelled()){
