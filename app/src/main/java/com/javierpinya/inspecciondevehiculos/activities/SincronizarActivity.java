@@ -315,6 +315,7 @@ public class SincronizarActivity extends AppCompatActivity implements View.OnCli
                     Log.e("tacprco empty", e.toString() + " nextline: " + reader.getLinesRead());
                 }
             }
+
         }catch (IOException e){
             e.printStackTrace();
             Log.e("Tacprco general", e.toString());
@@ -390,6 +391,7 @@ public class SincronizarActivity extends AppCompatActivity implements View.OnCli
         String cisterna;
         int tara;
         int peso_max;
+        long i=0;
 
         File file = new File(filename);
 
@@ -412,7 +414,6 @@ public class SincronizarActivity extends AppCompatActivity implements View.OnCli
                         tara,
                         peso_max));
             }
-
         }catch (IOException e){
             e.printStackTrace();
         }

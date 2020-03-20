@@ -206,7 +206,10 @@ public class BuscarVehiculoFragment extends Fragment {
                 mRecyclerView.setLayoutManager(mLayoutManager);
                 mRecyclerView.setAdapter(mAdapter);
             }else{
-                Toast.makeText(getActivity(), "Sin datos sobre ese vehículo", Toast.LENGTH_SHORT).show();
+                Toast.makeText(
+                        getActivity(),
+                        "Sin datos sobre ese vehículo",
+                        Toast.LENGTH_SHORT).show();
             }
         }
 

@@ -7,7 +7,7 @@
     tools:context=".fragments.nuevaInspeccion.FotosInspeccionFragment">
 
 
-        <LinearLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
@@ -15,18 +15,28 @@
             <TextureView
                 android:id="@+id/view_finder"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="0.93"/>
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
 
             <ImageButton
-                android:background="@color/colorPrimary"
                 android:id="@+id/img_capturafoto"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
                 android:layout_gravity="center"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="0.07"
+                android:layout_marginBottom="41dp"
+
+                android:background="@color/colorAccent"
+                android:elevation="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/view_finder"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:srcCompat="@android:drawable/ic_menu_camera" />
-        </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
 <!--
     <androidx.recyclerview.widget.RecyclerView

@@ -42,8 +42,9 @@ public class TaccamiViewModel extends AndroidViewModel {
         return taccamiRepository.findAllTaccami();
     }
 
-    public void insertarVehiculo(TaccamiEntity taccamiEntity){
+    public int insertarVehiculo(TaccamiEntity taccamiEntity){
         taccamiRepository.insertTaccami(taccamiEntity);
+        return 1;
     }
 
     public void updateVehiculo(TaccamiEntity taccamiEntity){

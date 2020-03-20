@@ -91,8 +91,8 @@ public class ResultadoBuscarTractoraFragment extends Fragment {
             Date fitv;
             fadr = tacprco.getFec_cadu_adr();
             fitv = tacprco.getFec_cadu_itv();
-            String dfAdr = DateFormat.getDateInstance(DateFormat.MEDIUM, Locale.FRANCE).format(fadr);
-            String dfItv = DateFormat.getDateInstance(DateFormat.MEDIUM,Locale.FRANCE).format(fitv);
+            String dfAdr = DateFormat.getDateInstance(DateFormat.MEDIUM, Locale.UK).format(fadr);
+            String dfItv = DateFormat.getDateInstance(DateFormat.MEDIUM,Locale.UK).format(fitv);
             matricula.setText(tacprco.getMatricula());
             tipo.setText(tacprco.getTipo());
             chip.setText(String.valueOf(tacprco.getChip()));

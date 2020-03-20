@@ -105,11 +105,11 @@ public class ResultadoBuscarCisternaFragment extends Fragment {
             }
 
             assert fadr != null;
-            String dfAdr = DateFormat.getDateInstance(DateFormat.MEDIUM, Locale.FRANCE).format(fadr);
+            String dfAdr = DateFormat.getDateInstance(DateFormat.MEDIUM, Locale.UK).format(fadr);
             assert fitv != null;
-            String dfItv = DateFormat.getDateInstance(DateFormat.MEDIUM,Locale.FRANCE).format(fitv);
+            String dfItv = DateFormat.getDateInstance(DateFormat.MEDIUM,Locale.UK).format(fitv);
             assert ftabla != null;
-            String dfTabla = DateFormat.getDateInstance(DateFormat.MEDIUM, Locale.FRANCE).format(ftabla);
+            String dfTabla = DateFormat.getDateInstance(DateFormat.MEDIUM, Locale.UK).format(ftabla);
 
             matricula.setText(tacsecoEntity.getMatricula());
             tipo.setText(tacsecoEntity.getTipo());

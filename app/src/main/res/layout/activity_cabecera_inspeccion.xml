@@ -18,12 +18,18 @@
             android:id="@+id/toolbar"
             layout="@layout/toolbar"/>
 
+        <FrameLayout
+            android:id="@+id/cabecera_inspeccion_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+<!--
     <fragment
         android:id="@+id/cabecera_inspeccion_fragment"
         android:name="com.javierpinya.inspecciondevehiculos.fragments.nuevaInspeccion.CabeceraInspeccionFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:layout="@layout/fragment_cabecera_inspeccion" />
+        -->
     </LinearLayout>
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navview"

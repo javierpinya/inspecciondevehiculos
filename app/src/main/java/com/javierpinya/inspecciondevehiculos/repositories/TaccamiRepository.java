@@ -42,8 +42,9 @@ public class TaccamiRepository {
         return taccamiDao.findTaccamiByTCMatricula(tractora, cisterna);
     }
 
-    public void insertTaccami(TaccamiEntity taccamiEntity){
+    public int insertTaccami(TaccamiEntity taccamiEntity){
         new insertAsyncTask(taccamiDao).execute(taccamiEntity);
+        return 1;
     }
 
     private static class insertAsyncTask extends AsyncTask<TaccamiEntity, Void, Void>{
